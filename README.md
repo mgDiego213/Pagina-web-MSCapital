@@ -4,7 +4,7 @@ Sitio de MS Capital. La portada presenta a la firma; el equipo destaca a Tere Si
 
 ## Cómo editar desde GitHub
 
-1. Abre el archivo que quieras cambiar.
+1. Abre [tu repositorio](https://github.com/mgDiego213/Pagina-web-MSCapital) y el archivo que quieras cambiar.
 2. Pulsa el icono del lápiz (Edit this file).
 3. Modifica el contenido y pulsa **Commit changes**.
 4. Guarda el cambio en la rama **main**. Cloudflare Pages publicará automáticamente la nueva versión.
@@ -18,6 +18,8 @@ Sitio de MS Capital. La portada presenta a la firma; el equipo destaca a Tere Si
 | `robots.txt` y `sitemap.xml` | Información de indexación y dominio. |
 | `_headers` | Cabeceras HTTP servidas por Cloudflare Pages. |
 
+[Editar los textos de la página](https://github.com/mgDiego213/Pagina-web-MSCapital/edit/main/index.html) · [Editar el diseño](https://github.com/mgDiego213/Pagina-web-MSCapital/edit/main/style.css)
+
 Para cambiar un texto, sustituye sus palabras conservando las etiquetas HTML. Por ejemplo, busca `Protegemos lo que hoy importa.` en `index.html`.
 
 Para cambiar una foto sin editar el HTML, reemplaza el archivo de `assets/` por uno con el mismo nombre. Los perfiles de Tere Silva y Alfredo Moya Santos usan imágenes JPG y WEBP; actualiza ambas versiones cuando cambies sus fotos.
@@ -30,8 +32,8 @@ Para cambiar una foto sin editar el HTML, reemplaza el archivo de `assets/` por 
 - Rama de producción: `main`.
 - Sitio HTML estático, sin dependencias ni instalación.
 - Framework: None.
-- Comando de compilación: vacío.
-- Directorio de salida: `/` (raíz del repositorio).
+- Comando de compilación: `exit 0`.
+- Directorio de salida: `.` (raíz del repositorio).
 
 Los cambios en otras ramas generan vistas previas. Los cambios guardados en `main` actualizan el sitio público. Puedes consultar el estado en Cloudflare > Workers & Pages > mscapsol-github > Deployments.
 
